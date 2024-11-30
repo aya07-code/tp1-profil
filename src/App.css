@@ -1,38 +1,136 @@
-.App {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.App{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  height: 9%;
+  background-color: #007bff;
+  display: flex;
+  justify-content: space-between;
+  padding:0% 2%;
+}
+
+.header-logo {
+  width: 50px;
+  height: 40px;
+  position: relative;
+  top: 50%;
+  transform: translate(0%,-50%);
+  border-radius: 50%;
+}
+
+.header-title{
+  color: white;
+  font-size: 20px;
+  margin-left: 70px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.menu a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+}
+
+.profil {
+  height: 83%;
+  padding: 0% 3%;
+  background-color: #ccddef;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.profile-infos-note{
+  display: flex;
+  gap: 5%;
+  padding: 1% 0%;
+}
+.profile-info {
+  display: flex;
+  gap: 20px;
+  width: 37%;
+  height: 170px;
+  border-radius: 7px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  /* border: 1px solid red; */
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.profil-note{
+  width: 55%;
+  background-color: #f9f9f9;
+  height: 170px;
+  padding: 10px;
+  border-radius: 7px;
+}
+.profil-note h3{
+  margin-top: -0px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.profile-table th, .profile-table td {
+  border: 1px solid #007bff;
+  padding: 10px;
+  text-align: left; 
+}
+.absence-table {
+  width: 100%;
+  background-color: #f9f9f9;
+  border-radius: 7px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: 240px;
+}
+.absence-table h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.profile-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.profile-table th, .profile-table td {
+  border: 1px solid #007bff;
+  padding: 10px;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.profile-table th {
+  background-color: #007bff;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.profile-table td {
+  background-color: #ffffff;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  background-color:#007bff;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  height: 12%;
 }
